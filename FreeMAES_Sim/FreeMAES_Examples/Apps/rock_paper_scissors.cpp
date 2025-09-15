@@ -15,9 +15,9 @@ using namespace MAES;
 using namespace std;
 
 /*Agentes*/
-Agent A("Player A", 1, 1024);
-Agent B("Player B", 1, 1024);
-Agent Referee("Referee", 2, 1024);
+Agent A("Player A", 1, 50);
+Agent B("Player B", 1, 50);
+Agent Referee("Referee", 2, 50);
 
 /*Declaraci�n de funciones de tarea*/
 void play(void* pvParameters);
@@ -118,7 +118,7 @@ public:
 			msg.receive(portMAX_DELAY);
 			if (msg.get_msg_type() == INFORM)
 			{
-				//printf("Playing now: ");
+
 				printf(AP_RPS.get_Agent_description(msg.get_sender()).agent_name);
 				printf(": ");
 				printf(msg.get_msg_content());
@@ -184,8 +184,8 @@ int rock_paper_scissors() {
 	printf("Jugador A listo \n");
 	AP_RPS.agent_init(&B, play);
 	printf("Jugador B listo \n");
-	//AP_RPS.agent_init(&Referee, watchover);
-	//printf("Referee listo \n");
+	AP_RPS.agent_init(&Referee, watchover);
+	printf("Referee listo \n");
 	AP_RPS.boot();
 	printf("Boot exitoso \n");
 	/* Start the scheduler so the created tasks start executing. */

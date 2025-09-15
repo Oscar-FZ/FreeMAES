@@ -125,5 +125,11 @@
     <ClCompile Include="FreeMAES_Examples\Apps\telemetry.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="GalaxyRVR_Agents\main_rvr.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="GalaxyRVR_Agents\car_control_agent.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

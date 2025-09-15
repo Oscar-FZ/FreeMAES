@@ -1,4 +1,4 @@
-#define APP1 1 //Sender-Receiver
+/*#define APP1 1 //Sender-Receiver
 #define APP2 2 //Rock, Paper, Scissors
 #define APP3 3 //Telemetry Demo
 #define SELECTED_DEMO APP2
@@ -22,4 +22,4 @@ int main()
 #endif // SELECTED_APP == APP1
 
 	return 0;
-}
+} */

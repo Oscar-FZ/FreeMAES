@@ -165,6 +165,8 @@
     <ClCompile Include="FreeRTOS_Source\queue.c" />
     <ClCompile Include="FreeRTOS_Source\tasks.c" />
     <ClCompile Include="FreeRTOS_Source\timers.c" />
+    <ClCompile Include="GalaxyRVR_Agents\car_control_agent.cpp" />
+    <ClCompile Include="GalaxyRVR_Agents\main_rvr.cpp" />
     <ClCompile Include="Supporting_Functions\supporting_functions.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -12,7 +12,7 @@
 
 
 using namespace MAES;
-#define AGENT_STACK_DEPTH 1024
+#define AGENT_STACK_DEPTH 50
 
 /*Agentes*/
 Agent logger_current("Current Agent", 3, AGENT_STACK_DEPTH);
@@ -130,9 +130,13 @@ int telemetry() {
 	log_temperature.type = TEMPERATURE;
 
 	AP_TELEMETRY.agent_init(&logger_current, logger, (void*)&log_current);
+	printf("Current Listo \n");
 	AP_TELEMETRY.agent_init(&logger_voltage, logger, (void*)&log_voltage);
+	printf("Voltage Listo \n");
 	AP_TELEMETRY.agent_init(&logger_temperature, logger, (void*)&log_temperature);
+	printf("Temperature Listo \n");
 	AP_TELEMETRY.agent_init(&measurement,gen_meas);
+	printf("Measurement Listo \n");
 	AP_TELEMETRY.boot();
 	printf("Boot exitoso \n");
 	/* Start the scheduler so the created tasks start executing. */

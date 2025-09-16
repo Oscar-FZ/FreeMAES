@@ -134,5 +134,8 @@
     <ClCompile Include="GalaxyRVR_Agents\rbg_agent.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="GalaxyRVR_Agents\soft_servo_agent.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

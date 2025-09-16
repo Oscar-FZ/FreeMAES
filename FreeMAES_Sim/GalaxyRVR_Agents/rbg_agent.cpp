@@ -1,4 +1,4 @@
-﻿/*Version agente del archivo car_control.cpp del GalaxyRVR*/
+﻿/*Version agente del archivo rgb.cpp del GalaxyRVR*/
 
 /* FreeRTOS.org includes. */
 #include "FreeRTOS.h"
@@ -19,7 +19,7 @@ Agent RGB_Control("RGB Agent", 1, 50);
 Agent Central_RGB("Central RGB Agent", 2, 50);
 
 /*Declaraci�n de funciones de tarea*/
-void central(void* pvParameters);
+void centralRGB(void* pvParameters);
 void rgb(void* pvParameters);
 
 /*plataforma*/

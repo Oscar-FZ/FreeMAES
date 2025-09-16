@@ -73,6 +73,10 @@ public:
 					printf("\n-- Write --\n");
 					break;
 
+				default:
+					printf("Instruccion no reconocida\n");
+					break;
+
 			}
 		}
 	}

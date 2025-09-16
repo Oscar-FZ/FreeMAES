@@ -1,11 +1,13 @@
 #define APP1 1 //Car Control
 #define APP2 2 //RGB Control
 #define APP3 3 //Servo Control
-#define SELECTED_AGENT APP3
+#define APP4 4 //Servo Control
+#define SELECTED_AGENT APP4
 
 extern int car_control_agent();
 extern int rgb_control_agent();
 extern int servo_control_agent();
+extern int ir_obstacle_agent();
 
 using namespace std;
 
@@ -17,6 +19,8 @@ int main()
 	rgb_control_agent();
 #elif SELECTED_AGENT == APP3
 	servo_control_agent();
+#elif SELECTED_AGENT == APP4
+	ir_obstacle_agent();
 #else
 	printf("NO AGENT APP SELECTED");
 #endif 

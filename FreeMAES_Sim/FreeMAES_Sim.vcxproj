@@ -166,6 +166,7 @@
     <ClCompile Include="FreeRTOS_Source\tasks.c" />
     <ClCompile Include="FreeRTOS_Source\timers.c" />
     <ClCompile Include="GalaxyRVR_Agents\car_control_agent.cpp" />
+    <ClCompile Include="GalaxyRVR_Agents\ir_obstacle_agent.cpp" />
     <ClCompile Include="GalaxyRVR_Agents\main_rvr.cpp" />
     <ClCompile Include="GalaxyRVR_Agents\rbg_agent.cpp" />
     <ClCompile Include="GalaxyRVR_Agents\soft_servo_agent.cpp" />

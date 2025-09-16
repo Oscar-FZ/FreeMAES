@@ -25,7 +25,7 @@ void rgb(void* pvParameters);
 /*plataforma*/
 Agent_Platform AP_RVR_RGB("windows");
 
-/*Enum que de los tipos de instrucciones que RGB_Control puede hacer*/
+/*Enum de los tipos de instrucciones que RGB_Control puede hacer*/
 typedef enum rgbIntructions : uint8_t {
 	Begin,
 	Write,
@@ -75,6 +75,10 @@ public:
 			case Off:
 				printf("\n-- Off --\n");
 				break;
+
+			default:
+				printf("Instruccion no reconocida\n");
+				break;
 			}
 
 		}
@@ -82,7 +86,7 @@ public:
 
 };
 
-/*Definicion funcion del agente de control rgb*/
+/*Definicion de la funcion del agente de control rgb*/
 void rgb(void* pvParameters) {
 	rgbBehaviour b;
 	b.execute();
@@ -113,7 +117,7 @@ public:
 };
 
 
-/*Definicion funcion del agente central*/
+/*Definicion de la funcion del agente central*/
 void centralRGB(void* pvParameters) {
 	centralRGBBehaviour b;
 	b.execute();

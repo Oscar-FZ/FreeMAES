@@ -142,7 +142,7 @@ public:
 	}
 };
 
-/*Definicion funcion del carro*/
+/*Definicion de la funcion del agente de control car*/
 void control(void* pvParameters) {
 	carBehaviour b;
 	b.execute();
@@ -170,7 +170,7 @@ public:
 	}
 };
 
-/*Definicion funcion del agente central*/
+/*Definicion de la funcion del agente central*/
 void central(void* pvParameters) {
 	centralBehaviour b;
 	b.execute();
